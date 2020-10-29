@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.HowItWorks {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gridContainer {
+  margin: 10px 30px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.gridContainer div {
+  padding: 10px;
+}
+
+.containerOneChildOne {
+  text-align: center;
+  place-items: center;
+}
+
+.containerOneChildOne img {
+  max-width: 60%;
+  padding: 30px;
+}
+
+.liwrapper {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-left: 2px solid #bdbdbd;
+}
+
+.liwrapper p,
+.liwrapper h6 {
+  margin-left: 10px;
+}
+
+.liwrapper p {
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.liwrapper h6 {
+  position: relative;
+}
+
+.liwrapper h6:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -29px;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  background-color: #bdbdbd;
+  cursor: pointer;
+}
+
+.liBgActive:before {
+  background-color: coral !important;
+}
+
+.imgContainer {
+  transition: all 1s ease;
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+}
